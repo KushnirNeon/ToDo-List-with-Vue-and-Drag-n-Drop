@@ -9,7 +9,7 @@ A lightweight Vue 3 ToDo app that lets you manage your tasks smoothly with drag-
 Add your screenshot to `assets/screenshots/todo-screenshot.png` and reference it here:
 
 ```markdown
-![Main](screenshots/todo.png)
+![Main](main.png)
 ```
 
 ---
