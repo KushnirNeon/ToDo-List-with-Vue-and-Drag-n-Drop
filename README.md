@@ -6,11 +6,7 @@ A lightweight Vue 3 ToDo app that lets you manage your tasks smoothly with drag-
 
 ## 📸 Screenshot
 
-Add your screenshot to `assets/screenshots/todo-screenshot.png` and reference it here:
-
-```markdown
 ![Main](main.png)
-```
 
 ---
 
@@ -62,7 +58,6 @@ The app connects to `ws://localhost:8080` for optional real-time sync.
 
 Minimal Node.js WebSocket server example:
 
-```js
 const WebSocket = require('ws');
 const wss = new WebSocket.Server({ port: 8080 });
 let lastState = null;
@@ -81,14 +76,11 @@ wss.on('connection', ws => {
 });
 
 console.log('WebSocket server running on ws://localhost:8080');
-```
 
 Run:
 
-```bash
 npm install ws
 node server.js
-```
 
 > For production, implement proper validation and authentication.
 
@@ -107,13 +99,3 @@ node server.js
 * Todos are sorted by `date` descending.
 * Currently, todos are identified by object reference; adding a unique `id` is recommended.
 * Incoming WebSocket messages replace local state; merge strategies can be added for conflict resolution.
-
----
-
-## 📝 License
-
-MIT — feel free to use, modify, and distribute.
-
----
-
-This README is ready to paste into GitHub as-is, with full instructions and code examples.
